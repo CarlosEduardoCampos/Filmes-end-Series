@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.cot{
+    font-size: 15pt;
+    min-height: 100px;
+    text-align: center;
+    display: block;
+    background-color: whitesmoke;
+    margin: 5px;
+    padding: 30px;
+    column-count: 2;
+}
+.cot h2{
+    margin: 10px;
+    font-family: 'Lobster', cursive;
+}
+.cot p{
+    text-align: justify;
+}
+.dir{
+    margin: auto;
+    display: block;
+    width: 550px;
+    float: left;
+    text-align: center;
+}
+.dir img{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.63);
+    margin: 10px;
+    border-radius: 3px;
+}
+.esq{
+    margin: auto;
+    display: block;
+    width: 550px;
+    float: right;
+    text-align: center;
+}
+.esq video{
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.63);
+    margin: 20px 0px 100px 0px;
+}
+@media(max-width: 1300px){
+    .cot{
+        column-count: 1;
+    }
+    .dir{
+        max-width: 500px;
+        float: none;
+        margin-bottom: 50px;
+    }
+    .esq{
+        max-width: 400px;
+        float: none;
+        width: auto;
+    }
+    .esq video{
+        margin: 20px 0px 0px 0px;
+    }
+}
+@media(max-width: 800px){
+    .dir{
+        width: auto;
+    }
+    .esq{
+        width: auto;
+    }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+footer{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 0px 50px 20px 50px;
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
