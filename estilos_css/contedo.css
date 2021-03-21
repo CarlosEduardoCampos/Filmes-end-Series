@@ -1,9 +1,23 @@
 .tela{
     position: absolute;
-    margin-left: 210px;
-    width: 120%;
+    padding-left: 220px;
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    margin-left: -6px;
+}
+body::-webkit-scrollbar-button{
+    background-color: rgba(255, 248, 220, 0.486);
+    color: red;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(245, 245, 245, 0.541);
+}
+body::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.158);
 }
 .tela h2{
+    margin-top: 10px;
     width: 200px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.459);
@@ -12,7 +26,7 @@
 }
 .conteudo{
     text-align: center;
-    width: 69%;
+    width: 82%;
     display: flex;
     overflow-x: auto;
     margin: 10px;
