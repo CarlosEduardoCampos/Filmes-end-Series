@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/estilos_css/pequisa.css">
 </head>
 <!---->
+<script src="codigo/pesquisa.js"></script>
 <body>
 <!---->
 <header>
@@ -77,10 +78,14 @@
     <div>
         <p> MENU </p>
     </div>
-    <div class="pesq">
-        <input type="search" name="barra_p" class="barra_p">
-        <label for="barra_p"></label>
-    </div>
+    <form class="pesq">
+        <input type="search" name="barra_p" class="barra_p" placeholder="Pesquisar" list="historico">
+        <datalist id="historico">
+
+            <option value=""></option>
+
+        </datalist>
+    </form>
     <!---->
     <nav id="menu">
         <ul>
