@@ -19,6 +19,7 @@ header{
 }
 .bt_menu{
     width: 200px;
+    height: 100%;
     text-align: center;
     padding-top: 10px;
     position: absolute;
@@ -26,12 +27,11 @@ header{
 }
 #menu{
     display: block;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
     width: 200px;
     height: 100%;
     padding: 5px;
-    padding-top: 70px;
+    padding-top: 20px;
 }
 #menu ul{
     list-style: none;
