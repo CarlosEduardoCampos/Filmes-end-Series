@@ -44,15 +44,22 @@ header{
 #menu ul{
     list-style: none;
 }
+#menu li :hover{
+    text-decoration: overline;
+    transition: 0.5s;
+}
 #menu ul li{
     margin: 15px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.048);
+    background-color: #2b2a2a0c;
     border: solid 1px rgba(245, 245, 245, 0.336);
     padding: 10px;
     border-radius: 5%;
 }
 #menu ul li a{
+    position: relative;
+    padding: 5% 25% 5% 25%;
+    margin: 0px;
     text-decoration: none;
     color: whitesmoke;
 }
