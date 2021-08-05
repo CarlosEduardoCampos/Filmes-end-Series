@@ -9,19 +9,16 @@
     <link rel="stylesheet" href="estilos_css/contedo.css">
     <link rel="stylesheet" href="estilos_css/pequisa.css">
 </head>
-<!---->
-<body>
-<header>
-    <video id="vid" src="videos/vid01.mp4" autoplay></video>
-    <!---->
-</header>
 <style>
+    body{
+        background-color: black;
+    }
+    header.cabeca{
+        position: absolute;
+    }
     .contencao{
-        min-width: 800px;
-        min-height: 600px;
-        margin-left: -10px;
-        width: 84.5%;
-        height: 600px;
+        width: 100%;
+        max-height: 600px;
         overflow: hidden;
     }
     .contencao img{
@@ -29,16 +26,16 @@
         height: 100%;
     }
     .prox, .ante{
-        margin: 10px;
-        margin-top: -490px;
+        opacity: 0.1;
+        margin: 15px;
+        margin-top: -50%;
         background-color: rgba(255, 248, 220, 0.384);
-        width: 50px;
-        padding: 5px;
         border-radius: 50%;
+        padding: 0px 9px 0px 9px;
         position: relative;
         color: black;
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
         transition: 0.5s;
         cursor: pointer;
     }
@@ -49,10 +46,12 @@
         float: left;
     }
     .prox:hover{
+        opacity: 0.5;
         background-color: black;
         color: whitesmoke;
     }
     .ante:hover{
+        opacity: 0.5;
         background-color: black;
         color: whitesmoke;
     }
@@ -61,116 +60,116 @@
         height: 100%;
     }
 </style>
-<!---->
-<div class="tela">
-    <div class="contencao">
-        <div class="imageBg">
-             <img src="imagens/img00.jpg" alt="imagem do slide" id="img">
+<body>
+    <section class="menu">
+        <input type="checkbox" class="botao" name="menu-ck" id="menu-ck">
+        <label for="menu-ck" class="botao">
+            <img src="-img-/book.png" id="menuimg" alt="img-menu">
+        </label>
+
+        <header class="cabeca">
+
+            <nav id="menu">
+                <form class="pesq">
+                    <input type="search" name="barra_p" class="barra_p" placeholder="Pesquisar" list="historico">
+                    <datalist id="historico">
+            
+                        <option value=""></option>
+            
+                    </datalist>
+                </form>
+                <ul>
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="series.html"> Séries </a>
+                    </li>
+                    <li>
+                        <a href="filme.html"> Filmes </a>
+                    </li>
+                    <li>
+                        <a href="anime.html"> Animes </a>
+                    </li>
+                    <li>
+                        <a href="contatos.html"> Contatos </a>
+                    </li>
+                </ul>
+            </nav>                    
+        </header>
+        <div class="contencao">
+            <div class="imageBg">
+                <img src="imagens/img00.jpg" alt="imagem do slide" id="img">
+                </div>
+            <div class="prox" onclick="slide(1)">
+                <strong>&gt;</strong>
             </div>
-        <div class="prox" onclick="slide(1)">
-            <strong>&gt;</strong>
-        </div>
-        <div class="ante"onclick="slide(2)">
-            <strong>&lt;</strong>
-        </div>
-    </div>
-    <!---->
-    <h2> Lançamentos 2021: </h2>
-    <!---->
-    <section class="conteudo">
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/marc.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/marc.html" rel="noopener noreferrer"> Março </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/abri.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/abri.html" rel="noopener noreferrer"> Abril </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/maio.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/maio.html" rel="noopener noreferrer"> Maio </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/junh.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/junh.html" rel="noopener noreferrer"> Junho </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/julh.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/julh.html"" rel="noopener noreferrer"> Julho </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/agos.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/agos.html" rel="noopener noreferrer"> Agosto </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/sete.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/sete.html" rel="noopener noreferrer"> Setembro </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/outu.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/outu.html" rel="noopener noreferrer"> Outubro </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/nove.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/nove.html" rel="noopener noreferrer"> Novembro </a></p>
-        </div>
-        <!---->
-        <div class="info">
-            <img src="imagens/mes/deze.png" alt="area de imagem">
-            <p> <a href="lancamentohtml/deze.html" rel="noopener noreferrer"> Dezembro </a></p>
-        </div>
-        <!---->
+            <div class="ante"onclick="slide(2)">
+                <strong>&lt;</strong>
+            </div>
+        </div>  
     </section>
-</div>
-<div class="bt_menu">
-    <div>
-        <p> MENU </p>
+    <div class="tela">
+        <hr>
+        <!---->
+        <h2> Lançamentos 2021: </h2>
+        <!---->
+        <section class="conteudo">
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/marc.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/marc.html" rel="noopener noreferrer"> Março </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/abri.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/abri.html" rel="noopener noreferrer"> Abril </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/maio.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/maio.html" rel="noopener noreferrer"> Maio </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/junh.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/junh.html" rel="noopener noreferrer"> Junho </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/julh.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/julh.html"" rel="noopener noreferrer"> Julho </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/agos.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/agos.html" rel="noopener noreferrer"> Agosto </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/sete.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/sete.html" rel="noopener noreferrer"> Setembro </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/outu.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/outu.html" rel="noopener noreferrer"> Outubro </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/nove.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/nove.html" rel="noopener noreferrer"> Novembro </a></p>
+            </div>
+            <!---->
+            <div class="info">
+                <img src="imagens/mes/deze.png" alt="area de imagem">
+                <p> <a href="lancamentohtml/deze.html" rel="noopener noreferrer"> Dezembro </a></p>
+            </div>
+            <!---->
+        </section>
     </div>
     <!---->
-    <form class="pesq">
-        <input type="search" name="barra_p" class="barra_p" placeholder="Pesquisar" list="historico">
-        <datalist id="historico">
-            <!---->
-            <option value=""></option>
-            <!---->
-        </datalist>
-    </form>
+    <script src="codigo/slide.js"></script>
     <!---->
-    <nav id="menu">
-        <ul>
-            <li>
-                <a href="index.html"> Home </a>
-            </li>
-            <!---->
-            <li>
-                <a href="series.html"> Séries </a>
-            </li>
-            <!---->
-            <li>
-                <a href="filme.html"> Filmes </a>
-            </li>
-            <!---->
-            <li>
-                <a href="anime.html"> Animes </a>
-            </li>
-            <!---->
-            <li>
-                <a href="contatos.html"> Contatos </a>
-            </li>
-        </ul>
-    </nav>        
-</div>
-<!---->
-<script src="codigo/slide.js"></script>
-<!---->
 </body>
 </html>

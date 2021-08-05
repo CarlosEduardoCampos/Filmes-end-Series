@@ -1,16 +1,24 @@
+.tela{
+    color: azure;
+    padding: 10px
+}
+.tela a{
+    margin: 20px;
+}
 .tela a:hover{
     transition: 0.5s;
     opacity: 0.7;
 }
 .tela .dados{
-    float: right;
+    width: 400px;
     text-align: center;
     font-size: 13pt;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(6, 236, 252, 0.089);
+    border: 1px solid rgb(0, 195, 255);
     border-radius: 10px;
-    margin: 20px 5px;
-    margin-right: 20%;
+    margin: auto;
+    margin-bottom: 15px;
 }
 .tela .dados p{
     margin: 5px;
@@ -18,20 +26,16 @@
 .tela .dados p img{
     margin-bottom: -12px;
 }
-.tela footer{
-    width: 100%;
-    height: auto;
-}
 .tela form {
     /* Apenas para centralizar o form na página */
-    margin: 0px 10px;
+    margin: auto;
     width: 78%;
     /* Para ver as bordas do formulário */
     padding: 5px;
-    border: 1px solid rgb(58, 16, 16);
+    border: 1px solid rgb(0, 195, 255);
     border-radius: 1em;
     padding: 1.5em;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(6, 236, 252, 0.089);
     text-align: center;
 }
 form div + div {
@@ -84,7 +88,7 @@ button {
     transition: 0.5s;
 }
 button:hover{
-    background-color: rgba(255, 0, 0, 0.664);
+    background-color: rgba(0, 195, 255, 0.664);
     color: whitesmoke;
     font-size: 14pt;
 }

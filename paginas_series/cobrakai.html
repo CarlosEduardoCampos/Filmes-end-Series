@@ -15,55 +15,55 @@
 <!---->
 <script src="../codigo/pesquisa.js"></script>
 <body>
-<!---->
-<header>
-    <video id="vid" src="../videos/vid01.mp4" autoplay></video>
     <!---->
-</header>
-<!---->
-<div class="tela">
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xCwwxNbtK6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p class="texto"> 
-        No tão aguardado retorno de dois personagens icônicos, os arquirrivais da lendária saga Karatê Kid se reúnem depois de mais de 30 anos dos acontecimentos do Torneio de Karatê do Vale de 1984. Agora vivendo nas prósperas colinas de Encino, Daniel LaRusso (Ralph Macchio) leva uma vida invejável com sua bela família enquanto dirige uma bem-sucedida rede de concessionárias na região. Enquanto isso, o seu adversário dos tempos de escola, Johnny Lawrence (William Zabka), cuja vida acabou não dando muito certo, busca redenção reabrindo o infame dojo de karatê Cobra Kai. Inevitavelmente, os dois acabam cruzando o caminho um do outro e a rivalidade renasce, criando a próxima geração de “karatê kids” em COBRA KAI, uma série original YouTube Red. COBRA KAI é produzida pela Overbrook Entertainment em parceria com a Sony Pictures Television.
-    </p>
-  
-</div>
-<!---->
-<div class="bt_menu">
-    <div>
-        <p> MENU </p>
-    </div>
-    <form class="pesq">
-        <input type="search" name="barra_p" class="barra_p" placeholder="Pesquisar" list="historico">
-        <datalist id="historico">
+    <section class="menu">
+        <input type="checkbox" class="botao" name="menu-ck" id="menu-ck">
+        <label for="menu-ck" class="botao">
+            <img src="../-img-/book.png" id="menuimg" alt="img-menu">
+        </label>
 
-            <option value=""></option>
+        <header class="cabeca">
 
-        </datalist>
-    </form>
+            <nav id="menu">
+                <form class="pesq">
+                    <input type="search" name="barra_p" class="barra_p" placeholder="Pesquisar" list="historico">
+                    <datalist id="historico">
+            
+                        <option value=""></option>
+            
+                    </datalist>
+                </form>
+                <ul>
+                    <li>
+                        <a href="../index.html""> Home </a>
+                    </li>
+                    <li>
+                        <a href="../series.html"> Séries </a>
+                    </li>
+                    <li>
+                        <a href="../filme.html"> Filmes </a>
+                    </li>
+                    <li>
+                        <a href="../anime.html"> Animes </a>
+                    </li>
+                    <li>
+                        <a href="../contatos.html"> Contatos </a>
+                    </li>
+                </ul>
+            </nav>                    
+        </header>
+    </section>
+    <hr>
     <!---->
-    <nav id="menu">
-        <ul>
-            <li>
-                <a href="../index.html"> Home </a>
-            </li>
-            <li>
-                <a href="../series.html"> Séries </a>
-            </li>
-            <li>
-                <a href="../filme.html"> Filmes </a>
-            </li>
-            <li>
-                <a href="../anime.html"> Animes </a>
-            </li>
-            <li>
-                <a href="../contatos.html"> Contatos </a>
-            </li>
-        </ul>
-    </nav>        
-</div>
-<!---->
+    <div class="tela">
+        <div class="item">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xCwwxNbtK6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="texto"> 
+                No tão aguardado retorno de dois personagens icônicos, os arquirrivais da lendária saga Karatê Kid se reúnem depois de mais de 30 anos dos acontecimentos do Torneio de Karatê do Vale de 1984. Agora vivendo nas prósperas colinas de Encino, Daniel LaRusso (Ralph Macchio) leva uma vida invejável com sua bela família enquanto dirige uma bem-sucedida rede de concessionárias na região. Enquanto isso, o seu adversário dos tempos de escola, Johnny Lawrence (William Zabka), cuja vida acabou não dando muito certo, busca redenção reabrindo o infame dojo de karatê Cobra Kai. Inevitavelmente, os dois acabam cruzando o caminho um do outro e a rivalidade renasce, criando a próxima geração de “karatê kids” em COBRA KAI, uma série original YouTube Red. COBRA KAI é produzida pela Overbrook Entertainment em parceria com a Sony Pictures Television.
+            </p>
+        </div>
+    </div>
 </body>
 </html>

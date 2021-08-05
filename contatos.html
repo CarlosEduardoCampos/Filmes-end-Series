@@ -14,26 +14,57 @@
 <!---->
 <script src="codigo/pesquisa.js"></script>
 <body>
-<!---->
-<header>
-    <video id="vid" src="videos/vid01.mp4" autoplay></video>
-    <!---->
-</header>
-<!---->
-<div class="tela">
-    <a href="http://facebook.com"><img src="imagens/facebook.png" class="media-object  img-responsive img-thumbnail">
-    <a href="https://www.instagram.com/"><img src="imagens/instagram.png" class="media-object  img-responsive img-thumbnail"></a>
-    
-    <div class="dados">
-        <address> Antonio Pereira Leite, 599 - Bela Vista - Passos - MG </address>
-        <p>
-            <img src="imagens/whasts.png" alt="Whastssap" name="img_whats" width="35px">
-            <label for="img_whats"> (37) 9999-9999 </label>
-        </p>
+    <section class="menu">
+        <input type="checkbox" class="botao" name="menu-ck" id="menu-ck">
+        <label for="menu-ck" class="botao">
+            <img src="-img-/book.png" id="menuimg" alt="img-menu">
+        </label>
+
+        <header class="cabeca">
+
+            <nav id="menu">
+                <form class="pesq">
+                    <input type="search" name="barra_p" class="barra_p" placeholder="Pesquisar" list="historico">
+                    <datalist id="historico">
+            
+                        <option value=""></option>
+            
+                    </datalist>
+                </form>
+                <ul>
+                    <li>
+                        <a href="index.html""> Home </a>
+                    </li>
+                    <li>
+                        <a href="series.html"> Séries </a>
+                    </li>
+                    <li>
+                        <a href="filme.html"> Filmes </a>
+                    </li>
+                    <li>
+                        <a href="anime.html"> Animes </a>
+                    </li>
+                    <li>
+                        <a href="contatos.html"> Contatos </a>
+                    </li>
+                </ul>
+            </nav>                    
+        </header>
+    </section>
+    <hr>
+    <div class="tela">
+        <a href="http://facebook.com"><img src="-img-/face.png" class="media-object  img-responsive img-thumbnail">
+        <a href="https://www.instagram.com/"><img src="-img-/insta.png" class="media-object  img-responsive img-thumbnail"></a>
         
-    </div>
-       
-    <footer>
+        <div class="dados">
+            <address> Antonio Pereira Leite, 599 - Bela Vista - Passos - MG </address>
+            <p>
+                <img src="imagens/whasts.png" alt="Whastssap" name="img_whats" width="35px">
+                <label for="img_whats"> (37) 9999-9999 </label>
+            </p>
+            
+        </div>
+        
         <form action="/pagina-processa-dados-do-form" method="post">
             <div>
                 <input type="text" id="nome" name="usuario_nome" placeholder="Nome"/>
@@ -49,42 +80,7 @@
             </div>
                 
         </form>  
-    </footer>
-</div>
-<!---->
-<div class="bt_menu">
-    <div>
-        <p> MENU </p>
+        
     </div>
-    <form class="pesq">
-        <input type="search" name="barra_p" class="barra_p" placeholder="Pesquisar" list="historico">
-        <datalist id="historico">
-
-            <option value=""></option>
-
-        </datalist>
-    </form>
-    <!---->
-    <nav id="menu">
-        <ul>
-            <li>
-                <a href="index.html"> Home </a>
-            </li>
-            <li>
-                <a href="series.html"> Séries </a>
-            </li>
-            <li>
-                <a href="filme.html"> Filmes </a>
-            </li>
-            <li>
-                <a href="anime.html"> Animes </a>
-            </li>
-            <li>
-                <a href="contatos.html"> Contatos </a>
-            </li>
-        </ul>
-    </nav>        
-</div>
-<!---->
 </body>
 </html>
