@@ -2,44 +2,44 @@ module.exports.listUserCategoria = function(categoria, application, req, res)
 {
     switch (categoria) {
         case 1:
-            res.render("categoria", {titulo:"MyFilmesAndSeries - Séries"});
+            res.render("categoria", {titulo:"MyListMovies - Séries"});
         break;
 
         case 2:
-            res.render("categoria", {titulo:"MyFilmesAndSeries - Filmes"});
+            res.render("categoria", {titulo:"MyListMovies - Filmes"});
         break;
 
         case 3:
-            res.render("categoria", {titulo:"MyFilmesAndSeries - Animes"});
+            res.render("categoria", {titulo:"MyListMovies - Animes"});
         break;
 
         default:
-            res.render("index", {titulo:"MyFilmesAndSeries - Home", validacao:{}});
+            res.render("index", {titulo:"MyListMovies - Home", validacao:{}});
         break;
     }
 }
 
-module.exports.listUserCategoriaTipo = function(categoria, tipo, application, req, res)
+module.exports.listUserSubcategoria = function(categoria, tipo, application, req, res)
 {
     switch (tipo) {
         case 1:
-            res.render("tipo", {titulo:"MyFilmesAndSeries - Ação", subTitulo:"Ação"});
+            res.render("subcategoria", {titulo:"MyListMovies - Ação", subTitulo:"Ação"});
         break;
 
         case 2:
-            res.render("tipo", {titulo:"MyFilmesAndSeries - Terror", subTitulo:"Terror"});
+            res.render("subcategoria", {titulo:"MyListMovies - Terror", subTitulo:"Terror"});
         break;
 
         case 3:
-            res.render("tipo", {titulo:"MyFilmesAndSeries - Drama", subTitulo:"Drama"});
+            res.render("subcategoria", {titulo:"MyListMovies - Drama", subTitulo:"Drama"});
         break;
 
         case 4:
-            res.render("tipo", {titulo:"MyFilmesAndSeries - Romace", subTitulo:"Romace"});
+            res.render("subcategoria", {titulo:"MyListMovies - Romace", subTitulo:"Romace"});
         break;
 
         default:
-            res.render("index", {titulo:"MyFilmesAndSeries - Home", validacao:{}});
+            res.render("index", {titulo:"MyListMovies - Home", validacao:{}});
         break;
     }
 }

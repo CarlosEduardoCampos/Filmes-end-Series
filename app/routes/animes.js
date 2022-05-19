@@ -4,25 +4,25 @@ module.exports = function (application)
     //
     application.get('/animes/acao', function (req, res)
     {
-        application.app.controllers.midias.listUserCategoriaTipo(categoria, 1, application, req, res);
+        application.app.controllers.midias.listUserSubcategoria(categoria, 1, application, req, res);
        // res.render('midia');
     });
 
     application.get('/animes/terror', function (req, res)
     {
-        application.app.controllers.midias.listUserCategoriaTipo(categoria, 2, application, req, res);
+        application.app.controllers.midias.listUserSubcategoria(categoria, 2, application, req, res);
        // res.render('midia');
     });
 
     application.get('/animes/drama', function (req, res)
     {
-        application.app.controllers.midias.listUserCategoriaTipo(categoria, 3, application, req, res);
+        application.app.controllers.midias.listUserSubcategoria(categoria, 3, application, req, res);
        // res.render('midia');
     });
 
     application.get('/animes/romace', function (req, res)
     {
-        application.app.controllers.midias.listUserCategoriaTipo(categoria, 4, application, req, res);
+        application.app.controllers.midias.listUserSubcategoria(categoria, 4, application, req, res);
        // res.render('midia');
     });
 

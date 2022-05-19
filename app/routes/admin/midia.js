@@ -29,4 +29,10 @@ module.exports = function (application)
             res.send("Uma midia foi editada");
         });
     //fim route 
+
+    application.get('/adm/midia/deletar/:id?',(req, res) =>
+        {
+            application.app.controllers.admin_midia.deleteAdminMidia(application, req, res);
+        })
+    ;
 }
